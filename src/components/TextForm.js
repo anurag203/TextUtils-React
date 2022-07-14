@@ -50,7 +50,10 @@ export default function TextForm(props) {
         setText(event.target.value);
     };
     function len_words(){
-        return text.trim().split(" ").length;
+        let s=text.trim().split(" ");
+        let ans =s.length;
+        if(s[s.length-1].length==0) ans--;
+        return ans;
     };
     return (
         <>
@@ -60,12 +63,12 @@ export default function TextForm(props) {
                     {/* <label for="myBox" className="form-label">{props.heading}</label> */}
                     <textarea className="form-control" id="myBox" rows="10" style={{ backgroundColor: props.mode === "light" ? "white" : "black", color: props.mode === "light" ? "black" : "white" }} onChange={handleOnChange} value={text} placeholder='Enter the text...' ></textarea>
                 </div>
-                <button className="btn btn-primary mx-2" onClick={upperCase}>Convert to Upppercase</button>
-                <button className="btn btn-secondary mx-2" onClick={lowerCase}>Convert to Lowercase</button>
-                <button className="btn btn-danger mx-2" onClick={capitalizeEachWord}>Capitalize Every Word</button>
-                <button className="btn btn-warning mx-2" onClick={copyText}>Copy Text</button>
-                <button className="btn btn-info mx-2" onClick={removeExtraSpaces}>Remove Extra Spaces</button>
-                <button className="btn btn-dark mx-2" onClick={clearAll}>Clear All</button>
+                <button className="btn btn-primary mx-2 my-3" onClick={upperCase}>Convert to Upppercase</button>
+                <button className="btn btn-secondary mx-2  my-3" onClick={lowerCase}>Convert to Lowercase</button>
+                <button className="btn btn-danger mx-2  my-3" onClick={capitalizeEachWord}>Capitalize Every Word</button>
+                <button className="btn btn-warning mx-2  my-3" onClick={copyText}>Copy Text</button>
+                <button className="btn btn-info mx-2  my-3" onClick={removeExtraSpaces}>Remove Extra Spaces</button>
+                <button className="btn btn-dark mx-2  my-3" onClick={clearAll}>Clear All</button>
             </div>
             <div className="container my-3">
                 <div className="second">
