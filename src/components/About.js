@@ -1,6 +1,6 @@
 import React, { useState }  from 'react'
 
-export default function About() {
+export default function About(props) {
 
     const [mystyle1,setMystyle] = useState({
         color: "black" ,
@@ -26,6 +26,7 @@ export default function About() {
             setbtntext("Enable Light Mode");
         }
     };
+    // toggleStyle();
     return (
         <div className='container' style={mystyle1}>
             <h1 className='my-4'>About Us</h1>
@@ -67,9 +68,10 @@ export default function About() {
                     </div>
                 </div>
             </div>
-            <div className="d-flex justify-content-center">
+            {/* <div className="d-flex justify-content-center">
                 <button onClick={toggleStyle} className="btn btn-primary my-5">{btntext}</button>
-            </div>
+            </div> */}
+            {/* {toggleStyle()} */}
         </div>
     )
 }
