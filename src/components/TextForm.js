@@ -50,7 +50,10 @@ export default function TextForm(props) {
         setText(event.target.value);
     };
     function len_words(){
-        return text.trim().split(" ").length;
+        let s=text.trim().split(" ");
+        let ans=text.trim().split(" ").length;
+        if(s=="") return 0;
+        return ans;
     };
     return (
         <>
@@ -71,7 +74,7 @@ export default function TextForm(props) {
                 <div className="second">
                     <h2 className='third'>Your text summary</h2>
                     <p className='first'>{len_words()} words, {text.length} characters </p>
-                    <p className='first'>{(0.008 * text.split(" ").length).toFixed(4)} minutes to read</p>
+                    <p className='first'>{(0.008 * len_words()).toFixed(4)} minutes to read</p>
                 </div>
                 <div className="secondd" style={{ color: props.mode === "light" ? "black" : "white" }}>
                     <h2 className='third'>Preview</h2>
