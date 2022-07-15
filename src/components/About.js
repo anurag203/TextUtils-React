@@ -1,32 +1,31 @@
-import React, { useState }  from 'react'
+import React, { useState } from 'react'
 
 export default function About(props) {
 
-    const [mystyle1,setMystyle] = useState({
-        color: "black" ,
+    const [mystyle1, setMystyle] = useState({
+        color: "black",
         backgroundColor: "white"
     });
-    const [btntext,setbtntext]=useState("Enable Dark Mode");
-    function toggleStyle()
-    {
-        if(mystyle1.color=== "white")
-        {
+    const [btntext, setbtntext] = useState("Enable Dark Mode");
+    function toggleStyle() {
+        if (mystyle1.color === "white") {
             setMystyle({
-                color: "black" ,
-        backgroundColor: "white"
+                color: "black",
+                backgroundColor: "white"
             });
             setbtntext("Enable Dark Mode");
         }
-        else
-        {
+        else {
             setMystyle({
-                color: "white" ,
+                color: "white",
                 backgroundColor: "black"
             });
             setbtntext("Enable Light Mode");
         }
     };
-    // toggleStyle();
+    if ((props.mode === "light" && mystyle1.color === "white") || (props.mode === "dark" && mystyle1.color === "black")) {
+        toggleStyle();
+    }
     return (
         <div className='container' style={mystyle1}>
             <h1 className='my-4'>About Us</h1>
@@ -68,10 +67,6 @@ export default function About(props) {
                     </div>
                 </div>
             </div>
-            {/* <div className="d-flex justify-content-center">
-                <button onClick={toggleStyle} className="btn btn-primary my-5">{btntext}</button>
-            </div> */}
-            {/* {toggleStyle()} */}
         </div>
     )
 }
