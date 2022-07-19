@@ -30,36 +30,38 @@ export default function About(props) {
                 <div className="accordion-item" >
                     <h2 className="accordion-header" id="headingOne">
                         <button className="accordion-button" type="button" style={mystyle1} data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                            Accordion Item #1
+                        How to Use TextUtils?
                         </button>
                     </h2>
                     <div id="collapseOne" className="accordion-collapse collapse show" style={mystyle1} aria-labelledby="headingOne" data-bs-parent="#accordionExample">
                         <div className="accordion-body">
-                            <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                            <strong>The editor on our website is an easy </strong> to use tool for text editing online that doesn’t make its users go through or follow any intricate procedures for editing their text files. Copy-paste your text in the box provided on this tool or upload the text file by browsing it from your device. Use the editing buttons to format the text as per your requirements. Use copy text Button to copy your edited Text.
                         </div>
                     </div>
                 </div>
                 <div className="accordion-item" >
                     <h2 className="accordion-header" id="headingTwo">
                         <button className="accordion-button collapsed" style={mystyle1} type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                            Accordion Item #2
+                        Key Benefits of TextUtils...
                         </button>
                     </h2>
                     <div id="collapseTwo" className="accordion-collapse collapse" style={mystyle1} aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
                         <div className="accordion-body">
-                            <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                            <strong>Easy to Use</strong> There are no technicalities involved with the usage of this tool. You can start using the text editing service on the go as soon as you access this tool.
+                            <strong> Fast and Error free editing</strong> The tool is a super-fast service that allows you to edit any text in a matter of a few minutes. It provides the users with an error-free editing facility.
+                            <strong> Shows charcter and Word count</strong> This also shows the count of characters and words in the text.
                         </div>
                     </div>
                 </div>
                 <div className="accordion-item" >
                     <h2 className="accordion-header" id="headingThree">
                         <button className="accordion-button collapsed" style={mystyle1} type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                            Accordion Item #3
+                            Funtions Available in TextUtils...
                         </button>
                     </h2>
                     <div id="collapseThree" className="accordion-collapse collapse" style={mystyle1} aria-labelledby="headingThree" data-bs-parent="#accordionExample">
                         <div className="accordion-body">
-                            <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                            <strong>There are many funcitons available : </strong> Convert to Uppercase, Convert to Lowercase, Capitalize first letter of every word, Remove extra spaces and Copy the edited text.
                         </div>
                     </div>
                 </div>
